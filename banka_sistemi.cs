@@ -11,7 +11,7 @@ while (x < 3)
 
     if (sifre == sifre_giris)
     {
-        
+
         double bakiye = 1000, tutar = 0;
         bool devamEt = true;
 
@@ -20,17 +20,17 @@ while (x < 3)
             Console.WriteLine("\n1. Para Çekme\n2. Para Yatırma\n3. Para Gönderme\n4. Çıkış");
             Console.Write("Lütfen gerçekleştirmek istediğiniz işlemi giriniz:");
             string secim = Console.ReadLine();
-            secim=secim.ToLower();
+            secim = secim.ToLower();
 
             switch (secim)
             {
                 case "1":
                 case "para çekme":
-                    Console.Write($"\nGüncel bakiyeniz:{bakiye} TL. Ne kadar çekmek istersiniz?:");
-                    x:
+                    Console.Write($"\nGüncel bakiyeniz:{bakiye} TL.Ne kadar çekmek istersiniz?:");
+                x:
                     try
                     {
-                        
+
                         tutar = Convert.ToDouble(Console.ReadLine());
 
                         if (tutar <= 0)
@@ -47,7 +47,7 @@ while (x < 3)
                         {
                             bakiye -= tutar;
                             Console.Clear();
-                            Console.WriteLine($"İşlem başarılı. Güncel bakiyeniz:{bakiye} TL");
+                            Console.WriteLine($"İşlem başarılı.Güncel bakiyeniz:{bakiye} TL");
                         }
                     }
                     catch
@@ -59,8 +59,8 @@ while (x < 3)
 
                 case "2":
                 case "para yatırma":
-                    Console.Write($"\nGüncel bakiyeniz:{bakiye} TL. Ne kadar yatırmak istersiniz:");
-                    y:
+                    Console.Write($"\nGüncel bakiyeniz:{bakiye} TL.Ne kadar yatırmak istersiniz:");
+                y:
                     try
                     {
                         tutar = Convert.ToDouble(Console.ReadLine());
@@ -74,8 +74,8 @@ while (x < 3)
                         {
                             bakiye += tutar;
                             Console.Clear();
-                            Console.WriteLine($"İşlem başarılı. Güncel bakiyeniz:{bakiye} TL");
-                            
+                            Console.WriteLine($"İşlem başarılı.Güncel bakiyeniz:{bakiye} TL");
+
                         }
                     }
                     catch
@@ -90,8 +90,8 @@ while (x < 3)
                     Console.Write("Hangi isme para göndermek istersiniz:");
                     string isim = Console.ReadLine();
 
-                    Console.Write($"\nGüncel bakiyeniz: {bakiye} TL. Ne kadar göndermek istersiniz:");
-                    z:
+                    Console.Write($"\nGüncel bakiyeniz:{bakiye} TL.Ne kadar göndermek istersiniz:");
+                z:
                     try
                     {
                         tutar = Convert.ToDouble(Console.ReadLine());
@@ -110,8 +110,8 @@ while (x < 3)
                         {
                             bakiye -= tutar;
                             Console.Clear();
-                            Console.WriteLine($"{isim} kişisine {tutar} TL gönderildi. Güncel bakiyeniz:{bakiye} TL");
-                            
+                            Console.WriteLine($"{isim} kişisine {tutar} TL gönderildi.Güncel bakiyeniz:{bakiye} TL");
+
                         }
                     }
                     catch
@@ -129,7 +129,7 @@ while (x < 3)
 
                 default:
                     Console.Clear();
-                    Console.WriteLine("Geçersiz işlem girdiniz. Lütfen geçerli bir işlem seçiniz.");
+                    Console.WriteLine("Geçersiz işlem girdiniz.Lütfen geçerli bir işlem seçiniz.");
                     break;
             }
         }
@@ -140,12 +140,12 @@ while (x < 3)
         x++;
         if (x == 3)
         {
-            Console.WriteLine("Deneme hakkınız kalmamıştır. Kartınız bloke olmuştur.");
+            Console.WriteLine("Deneme hakkınız kalmamıştır.Kartınız bloke olmuştur.");
             break;
         }
         else
         {
-            Console.WriteLine($"{3 - x} deneme hakkınız kaldı. Lütfen doğru şifreyi giriniz.\n");
+            Console.WriteLine($"{3 - x} deneme hakkınız kaldı.Lütfen doğru şifreyi giriniz.\n");
         }
     }
 }
