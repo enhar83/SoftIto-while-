@@ -11,3 +11,5 @@
  }
  Console.WriteLine($"{sayi} sayısına kadar olan tek sayıların toplamı:{tek_toplam}");
  Console.WriteLine($"{sayi} sayısına kadar olan çift sayıların toplamı:{cift_toplam}");
+
+Console.ReadLine();
